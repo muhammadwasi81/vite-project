@@ -8,6 +8,8 @@ export default {
         primary: "#0154AA",
         secondary: "#737A91",
         heading: "#333333",
+        grey: "#585D6E",
+        border: "#737A91",
       },
       fontFamily: {
         sans: ["Neue Haas Display", "sans-serif"],

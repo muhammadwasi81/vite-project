@@ -18,4 +18,12 @@ export interface UserProfile {
   resumeViewers: number;
   myJobs: number;
   imageUrl: string;
+  bannerUrl: string;
+}
+
+export interface InterviewItemProps {
+  title: string;
+  company: string;
+  datetime: string;
+  location: string;
 }

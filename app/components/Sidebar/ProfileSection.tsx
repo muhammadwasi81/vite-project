@@ -6,17 +6,34 @@ interface ProfileSectionProps {
 
 export function ProfileSection({ user }: ProfileSectionProps) {
   return (
-    <div className="text-center p-6">
-      <div className="relative w-24 h-24 mx-auto mb-4">
+    <div className="w-full bg-white rounded-lg">
+      <div className="relative w-full h-[100px]">
         <img
-          src={user.imageUrl}
-          alt={user.name}
-          className="rounded-full w-full h-full object-cover"
+          src={user.bannerUrl || "/placeholder.svg"}
+          alt="Profile banner"
+          className="w-full h-full object-cover rounded-t-lg"
         />
+
+        <div className="absolute left-1/2 -translate-x-1/2 -bottom-[45px]">
+          <div className="w-[86px] h-[86px] rounded-full p-0.5 bg-white">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <img
+                src={user.imageUrl || "/placeholder.svg"}
+                alt={user.name}
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <h2 className="text-xl font-bold text-heading mb-2">{user.name}</h2>
-      <p className="text-secondary text-sm mb-1">{user.title}</p>
-      <p className="text-secondary text-sm">{user.location}</p>
+
+      <div className="pt-12 pb-6 text-center">
+        <h2 className="text-lg font-semibold text-heading mb-2">{user.name}</h2>
+        <p className="text-md text-heading mb-1 max-w-xl mx-auto">
+          {user.title}
+        </p>
+        <p className="text-md text-grey">{user.location}</p>
+      </div>
     </div>
   );
 }

@@ -1,33 +1,41 @@
-import SearchIcon from "~/assets/svg/SearchIcon";
+import ChevronDownIcon from "~/assets/svg/ChevronDownIcon";
 import { Button } from "../common/Button/Button";
+import SearchWhiteIcon from "~/assets/svg/SearchWhiteIcon";
 
 export function SearchBar() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-4 bg-white p-4 rounded-lg">
-      <div className="md:col-span-5 relative">
+    <div className="flex flex-col md:flex-row gap-3 bg-white p-4 rounded-xl shadow-sm">
+      <div className="relative flex-1 mt-1">
         <input
           type="text"
           placeholder="Job Title, Company, or Keywords"
-          className="w-full h-12 pl-10 pr-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full h-12 pl-4 pr-4 text-base text-gray-900 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white"
         />
-        <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-secondary w-5 h-5" />
       </div>
 
-      <div className="md:col-span-3">
-        <select className="w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-          <option>Select Location</option>
+      <div className="hidden md:block w-px bg-gray-200 my-2"></div>
+
+      <div className="relative min-w-[200px]">
+        <select className="w-full appearance-none h-12 pl-4 pr-10 text-base text-gray-900 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white">
+          <option value="">Select Location</option>
         </select>
+        <ChevronDownIcon className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-2 text-grey pointer-events-none" />
       </div>
 
-      <div className="md:col-span-3">
-        <select className="w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-          <option>Job Type</option>
+      <div className="hidden md:block w-px bg-gray-200 my-2"></div>
+
+      <div className="relative min-w-[200px]">
+        <select className="w-full appearance-none h-12 pl-4 pr-10 text-base text-gray-900 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white">
+          <option value="">Job Type</option>
         </select>
+        <ChevronDownIcon className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-2 text-grey pointer-events-none" />
       </div>
 
-      <Button size="sm" startIcon={<SearchIcon />}>
-        Search
-      </Button>
+      <Button
+        className="h-10 px-6 mt-1 text-base font-medium rounded-lg"
+        startIcon={<SearchWhiteIcon />}
+        title="Search"
+      />
     </div>
   );
 }

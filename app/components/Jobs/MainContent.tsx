@@ -1,44 +1,9 @@
+import { Button } from "../common/Button/Button";
 import { JobSection } from "./JobSection";
 import { SearchBar } from "./SearchBar";
-import type { Job } from "./types";
+import { featuredJobs } from "~/data/jobs";
 
 export function MainContent() {
-  const featuredJobs: Job[] = [
-    {
-      id: "1",
-      title: "UI/UX Designer",
-      company: "Teams",
-      location: "Seattle, USA",
-      isRemote: true,
-      postedTime: "1 day ago",
-      applicants: 22,
-      promoted: true,
-      logoUrl: "/placeholder.svg",
-    },
-    {
-      id: "1",
-      title: "UI/UX Designer",
-      company: "Teams",
-      location: "Seattle, USA",
-      isRemote: true,
-      postedTime: "1 day ago",
-      applicants: 22,
-      promoted: true,
-      logoUrl: "/placeholder.svg",
-    },
-    {
-      id: "1",
-      title: "UI/UX Designer",
-      company: "Teams",
-      location: "Seattle, USA",
-      isRemote: true,
-      postedTime: "1 day ago",
-      applicants: 22,
-      promoted: true,
-      logoUrl: "/placeholder.svg",
-    },
-  ];
-
   return (
     <main className="flex-1 p-6 bg-[#F5F7FA]">
       <div className="max-w-7xl mx-auto">
@@ -54,16 +19,18 @@ export function MainContent() {
 
         <SearchBar />
 
-        <div className="flex gap-2 my-6">
+        <div className="flex gap-2 mt-6 mb-2">
+          <span className="text-secondary text-md mt-1.5">Similar:</span>
           {["Frontend", "Backend", "Graphic Designer"].map((filter) => (
-            <button
+            <Button
               key={filter}
-              className="px-4 py-2 bg-white rounded-full text-secondary hover:bg-primary hover:text-white transition-colors"
+              className="px-4 py-0.5 font-normal text-sm bg-transparent rounded-lg border border-border text-border hover:bg-primary hover:text-white transition-colors"
             >
               {filter}
-            </button>
+            </Button>
           ))}
         </div>
+        <div className="border-b border-gray mb-5"></div>
 
         <JobSection
           title="Featured Jobs"
