@@ -1,6 +1,6 @@
 {
-  "buildCommand": "vite build",
-  "outputDirectory": "dist",
+  "buildCommand": "react-router build",
+  "outputDirectory": "build/client",
   "rewrites": [
     {
       "source": "/(.*)",

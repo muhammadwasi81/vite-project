@@ -10,9 +10,5 @@ export default defineConfig({
       plugins: [tailwindcss, autoprefixer],
     },
   },
-  build: {
-    outDir: "dist",
-    emptyOutDir: true,
-  },
   plugins: [reactRouter(), tsconfigPaths()],
 });
