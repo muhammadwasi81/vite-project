@@ -1,6 +1,6 @@
 import { Button } from "../common/Button/Button";
-import { JobSection } from "./JobSection";
-import { SearchBar } from "./SearchBar";
+import { JobSection } from "./sections/JobSection";
+import { SearchBar } from "./search/SearchBar";
 import { featuredJobs } from "~/data/jobs";
 
 export function MainContent() {
@@ -23,11 +23,11 @@ export function MainContent() {
           <span className="text-secondary text-md mt-1.5">Similar:</span>
           {["Frontend", "Backend", "Graphic Designer"].map((filter) => (
             <Button
+              variant="outline"
               key={filter}
-              className="px-4 py-0.5 font-normal text-sm bg-transparent rounded-lg border border-border text-border hover:bg-primary hover:text-white transition-colors"
-            >
-              {filter}
-            </Button>
+              title={filter}
+              className="px-4 font-normal text-sm"
+            />
           ))}
         </div>
         <div className="border-b border-gray mb-5"></div>

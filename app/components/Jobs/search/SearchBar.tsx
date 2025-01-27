@@ -1,5 +1,5 @@
 import ChevronDownIcon from "~/assets/svg/ChevronDownIcon";
-import { Button } from "../common/Button/Button";
+import { Button } from "../../common/Button/Button";
 import SearchWhiteIcon from "~/assets/svg/SearchWhiteIcon";
 
 export function SearchBar() {

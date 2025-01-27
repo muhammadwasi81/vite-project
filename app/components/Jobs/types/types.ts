@@ -20,10 +20,3 @@ export interface UserProfile {
   imageUrl: string;
   bannerUrl: string;
 }
-
-export interface InterviewItemProps {
-  title: string;
-  company: string;
-  datetime: string;
-  location: string;
-}

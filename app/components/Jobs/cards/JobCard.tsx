@@ -1,8 +1,8 @@
 import MapPinIcon from "~/assets/svg/MapPinIcon";
 import TeamsIcon from "~/assets/svg/TeamsIcon";
-import type { Job } from "./types";
 import ClockIcon from "~/assets/svg/ClockIcon";
 import SaveIcon from "~/assets/svg/SaveIcon";
+import type { Job } from "../types/types";
 
 interface JobCardProps {
   job: Job;
@@ -16,7 +16,7 @@ export function JobCard({ job }: JobCardProps) {
       )}
 
       <div className="flex gap-3 mb-3">
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 bg-lightgrey rounded-lg p-2">
           <TeamsIcon className="w-6 h-6 text-primary" />
         </div>
         <div>

@@ -1,4 +1,4 @@
-import type { UserProfile } from "../Jobs/types";
+import type { UserProfile } from "../../Jobs/types/types";
 
 interface ProfileSectionProps {
   user: UserProfile;

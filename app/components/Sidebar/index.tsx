@@ -1,6 +1,6 @@
-import type { UserProfile } from "../Jobs/types";
-import { ProfileSection } from "./ProfileSection";
-import { StatsSection } from "./StatsSection";
+import type { UserProfile } from "../Jobs/types/types";
+import { ProfileSection } from "./profile/ProfileSection";
+import { StatsSection } from "./stats/StatsSection";
 import { CalendarSection } from "./calender/CalenderSection";
 
 export function Sidebar() {

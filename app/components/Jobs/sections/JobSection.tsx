@@ -1,5 +1,5 @@
-import { JobCard } from "./JobCard";
-import type { Job } from "./types";
+import { JobCard } from "../cards/JobCard";
+import type { Job } from "../types/types";
 
 interface JobSectionProps {
   title: string;

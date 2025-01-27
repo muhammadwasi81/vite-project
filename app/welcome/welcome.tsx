@@ -1,6 +1,6 @@
-import { MainContent } from "~/components/Jobs/MainContent";
-import MainLayout from "~/components/Layouts/MainLayout";
-import { Sidebar } from "~/components/Sidebar/Sidebar";
+import { MainContent } from "~/components/Jobs";
+import MainLayout from "~/components/Layouts/RootLayout";
+import { Sidebar } from "~/components/Sidebar";
 
 export function Welcome() {
   return (

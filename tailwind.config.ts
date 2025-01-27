@@ -10,6 +10,7 @@ export default {
         heading: "#333333",
         grey: "#585D6E",
         border: "#737A91",
+        lightgrey: "#FAFAFA",
       },
       fontFamily: {
         sans: ["Neue Haas Display", "sans-serif"],
