@@ -4,7 +4,7 @@ import { Welcome } from "../welcome/welcome";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Find Jobs" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "Welcome to Find Jobs" },
   ];
 }
 

@@ -9,18 +9,18 @@ export function ProfileSection({ user }: ProfileSectionProps) {
     <div className="w-full bg-white rounded-lg">
       <div className="relative w-full h-[100px]">
         <img
-          src={user.bannerUrl || "/placeholder.svg"}
+          src={user.bannerUrl}
           alt="Profile banner"
-          className="w-full h-full object-cover rounded-t-lg"
+          className="w-full h-full object-cover rounded-t-lg cursor-pointer"
         />
 
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-[45px]">
           <div className="w-[86px] h-[86px] rounded-full p-0.5 bg-white">
             <div className="relative w-full h-full rounded-full overflow-hidden">
               <img
-                src={user.imageUrl || "/placeholder.svg"}
+                src={user.imageUrl}
                 alt={user.name}
-                className="object-cover"
+                className="object-cover cursor-pointer"
               />
             </div>
           </div>

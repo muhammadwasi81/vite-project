@@ -19,16 +19,20 @@ export function MainContent() {
 
         <SearchBar />
 
-        <div className="flex gap-2 mt-6 mb-2">
-          <span className="text-secondary text-md mt-1.5">Similar:</span>
-          {["Frontend", "Backend", "Graphic Designer"].map((filter) => (
-            <Button
-              variant="outline"
-              key={filter}
-              title={filter}
-              className="px-4 font-normal text-sm"
-            />
-          ))}
+        <div className="flex flex-wrap gap-2 mt-6 mb-2">
+          <span className="text-secondary text-md mt-1.5 w-full sm:w-auto">
+            Similar:
+          </span>
+          <div className="flex flex-wrap gap-2">
+            {["Frontend", "Backend", "Graphic Designer"].map((filter) => (
+              <Button
+                variant="outline"
+                key={filter}
+                title={filter}
+                className="px-4 font-normal text-sm"
+              />
+            ))}
+          </div>
         </div>
         <div className="border-b border-gray mb-5"></div>
 
