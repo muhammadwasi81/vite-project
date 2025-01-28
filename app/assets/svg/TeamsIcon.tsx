@@ -83,9 +83,9 @@ export default function TeamsIcon(props: SVGProps<SVGSVGElement>) {
           y2="1258.47"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#5A62C3" />
-          <stop offset="0.5" stop-color="#4D55BD" />
-          <stop offset="1" stop-color="#3940AB" />
+          <stop stopColor="#5A62C3" />
+          <stop offset="0.5" stopColor="#4D55BD" />
+          <stop offset="1" stopColor="#3940AB" />
         </linearGradient>
       </defs>
     </svg>

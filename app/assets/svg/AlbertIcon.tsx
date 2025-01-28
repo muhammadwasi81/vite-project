@@ -15,7 +15,7 @@ export default function AlbertIcon(props: SVGProps<SVGSVGElement>) {
         d="M45 89C69.3005 89 89 69.3005 89 45C89 20.6995 69.3005 1 45 1C20.6995 1 1 20.6995 1 45C1 69.3005 20.6995 89 45 89Z"
         fill="url(#pattern0_1_130)"
         stroke="white"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <defs>
         <pattern
