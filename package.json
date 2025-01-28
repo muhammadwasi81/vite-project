@@ -2,14 +2,14 @@
   "name": "vite-project",
   "private": true,
   "type": "module",
-  "homepage": "https://github.com/muhammadwasi81/vite-project",
+  "homepage": "https://muhammadwasi81.github.io/vite-project",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build/client"
   },
   "dependencies": {
     "@react-router/node": "^7.1.3",
