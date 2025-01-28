@@ -10,6 +10,6 @@ export default defineConfig({
       plugins: [tailwindcss, autoprefixer],
     },
   },
-  base: process.env.VITE_BASE_URL,
+  base: "/vite-project/",
   plugins: [reactRouter(), tsconfigPaths()],
 });
